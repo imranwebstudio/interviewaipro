@@ -1,4 +1,4 @@
-# AI Mock Interview
+# AI Mock Interview - Inprep
 
 Live site: https://www.inprep.ai
 

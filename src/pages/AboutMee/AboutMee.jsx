@@ -13,18 +13,18 @@ const customSelectStyles = {
   control: (provided, state) => ({
     ...provided,
     backgroundColor: "white",
-    borderColor: "#37B874",
-    boxShadow: state.isFocused ? `0 0 0 1px #37B874` : "none",
+    borderColor: "#6a329f",
+    boxShadow: state.isFocused ? `0 0 0 1px #6a329f` : "none",
     "&:hover": {
-      borderColor: "#37B874",
+      borderColor: "#6a329f",
     },
   }),
   option: (provided, state) => ({
     ...provided,
     backgroundColor: state.isSelected
-      ? "#37B874"
+      ? "#6a329f"
       : state.isFocused
-      ? "#37B874"
+      ? "#6a329f"
       : "white",
     color: state.isSelected || state.isFocused ? "white" : "black",
     cursor: "pointer",
@@ -42,7 +42,7 @@ const customSelectStyles = {
     ...provided,
     color: "#166534",
     ":hover": {
-      backgroundColor: "#37B874",
+      backgroundColor: "#6a329f",
       color: "white",
     },
   }),
@@ -290,7 +290,7 @@ const AboutMee = () => {
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                   placeholder="Enter your city"
                   required
                 />

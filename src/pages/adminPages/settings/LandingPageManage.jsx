@@ -134,7 +134,7 @@ const LandingPageManage = () => {
       text: "This action cannot be undone.",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#37B874",
+      confirmButtonColor: "#6a329f",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
       cancelButtonText: "Cancel",
@@ -169,7 +169,7 @@ const LandingPageManage = () => {
       text: "This action cannot be undone.",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#37B874",
+      confirmButtonColor: "#6a329f",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
       cancelButtonText: "Cancel",
@@ -280,7 +280,7 @@ const LandingPageManage = () => {
     <div className="max-w-full mx-auto p-2 md:p-6 lg:p-6 rounded-md text-gray-900">
       {loading && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-white/80">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-[#37B874] border-solid"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-[#6a329f] border-solid"></div>
         </div>
       )}
 
@@ -582,7 +582,7 @@ const LandingPageManage = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#37B874] hover:bg-[#195234] text-white font-semibold py-3 rounded mt-6 cursor-pointer"
+            className="w-full bg-[#6a329f] hover:bg-[#195234] text-white font-semibold py-3 rounded mt-6 cursor-pointer"
           >
             {loading ? "Saving..." : "Save Changes"}
           </button>

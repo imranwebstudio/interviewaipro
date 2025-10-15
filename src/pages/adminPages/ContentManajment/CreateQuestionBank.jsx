@@ -398,7 +398,7 @@ const CreateQuestionBank = ({ interviewUploadReload, setInterviwUploadReload }) 
             <button
               type="submit"
               disabled={loading || fetchingInterviews}
-              className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
+              className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
             >
               {loading ? <LoaderCircle className="animate-spin w-4 h-4" /> : null}
               Create Position

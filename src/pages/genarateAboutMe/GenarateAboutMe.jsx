@@ -98,7 +98,7 @@ const GenerateAboutMe = () => {
           </h1>
           <p className="text-lg text-white mb-3">
             The first interview question is often{" "}
-            <span className="font-medium text-[#37B874]">
+            <span className="font-medium text-[#6a329f]">
               “Tell me about yourself,”
             </span>{" "}
             and we’re here to help you generate a tailored response directly
@@ -116,7 +116,7 @@ const GenerateAboutMe = () => {
             <p className="text-center text-red-500">{error}</p>
           ) : (
             <div>
-              <h1 className="text-2xl font-bold mb-4 text-center text-[#37B874]">
+              <h1 className="text-2xl font-bold mb-4 text-center text-[#6a329f]">
                 About Me
               </h1>
               <p className="text-gray-700">{aboutText}</p>

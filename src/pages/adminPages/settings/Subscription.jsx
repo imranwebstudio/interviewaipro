@@ -46,7 +46,7 @@ const Subscription = () => {
       </p>
 
       <div className="flex justify-end items-center gap-4 mb-6 mt-6">
-        <button className="bg-[#37B874] text-white text-sm px-4 py-2 rounded hover:bg-green-700">
+        <button className="bg-[#6a329f] text-white text-sm px-4 py-2 rounded hover:bg-green-700">
           Add New Subscription Plan +
         </button>
       </div>
@@ -55,14 +55,14 @@ const Subscription = () => {
         {plans.map((plan) => (
           <div
             key={plan._id}
-            className="rounded-lg p-6 hover:shadow-lg transition duration-300 flex flex-col justify-between card w-74 md:w-72 lg:w-80 lg:p-[12px] h-[670px] bg-white text-[#3A4C67] shadow-sm border-1 border-[#37B874] relative"
+            className="rounded-lg p-6 hover:shadow-lg transition duration-300 flex flex-col justify-between card w-74 md:w-72 lg:w-80 lg:p-[12px] h-[670px] bg-white text-[#3A4C67] shadow-sm border-1 border-[#6a329f] relative"
           >
             <div className="card-body text-start">
               <div>
                 <h3 className="text-[24px] font-bold mb-2">{plan.name}</h3>
                 <p className="text-[#676768] text-[16px]">{plan.description}</p>
                 <h3 className="text-[16px] font-bold mt-6">
-                  <span className="text-[#37B874] text-3xl">
+                  <span className="text-[#6a329f] text-3xl">
                     ${plan.priceMonthly}
                   </span>
                   {plan.priceLabel}
@@ -74,7 +74,7 @@ const Subscription = () => {
               <ul className="flex flex-col gap-2 text-[16px] text-[#3A4C67] font-medium">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <FaCircleCheck className="text-[#37B874]" />
+                    <FaCircleCheck className="text-[#6a329f]" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -104,7 +104,7 @@ const Subscription = () => {
             </button>
           </div>
         </div>
-        <button className="bg-[#37B874] text-white px-4 py-2 rounded-lg hover:bg-green-700">
+        <button className="bg-[#6a329f] text-white px-4 py-2 rounded-lg hover:bg-green-700">
           Add +
         </button>
       </div>

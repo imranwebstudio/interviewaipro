@@ -90,7 +90,7 @@ const IncompleateInterviews = () => {
       {!loading && !error && (
         <div className="max-w-4xl mx-auto mt-8">
           <div className="max-w-4xl mx-auto mb-16">
-            <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-[#37B874] text-center tracking-wide">
+            <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-[#6a329f] text-center tracking-wide">
               Incomplete Interviews
             </h1>
 

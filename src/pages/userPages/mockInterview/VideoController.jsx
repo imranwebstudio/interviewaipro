@@ -388,7 +388,7 @@
 //           <div>
 //             {isRecording && (
 //               <div className="mb-4">
-//                 <h3 className="text-lg font-semibold text-[#37B874]">Recording...</h3>
+//                 <h3 className="text-lg font-semibold text-[#6a329f]">Recording...</h3>
 //                 <p>Time remaining: {formatTime(recordingTimeLeft)}</p>
 //               </div>
 //             )}
@@ -800,7 +800,7 @@ const VideoController = forwardRef(
           <div>
             {isRecording && (
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-[#37B874]">Recording...</h3>
+                <h3 className="text-lg font-semibold text-[#6a329f]">Recording...</h3>
                 <p>Time remaining: {formatTime(recordingTimeLeft)}</p>
               </div>
             )}

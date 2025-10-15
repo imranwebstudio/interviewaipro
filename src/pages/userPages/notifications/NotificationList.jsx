@@ -102,7 +102,7 @@ const NotificationList = () => {
 
   return (
     <div className="w-full max-w-[1444px] mx-auto md:p-6 lg:p-6">
-      <h2 className="text-3xl font-bold mb-6 text-center text-[#37B874]">Notifications</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center text-[#6a329f]">Notifications</h2>
       {loading ? (
         <div className="flex justify-center">
           <LoaderCircle className="animate-spin w-8 h-8 text-gray-600" />
@@ -119,7 +119,7 @@ const NotificationList = () => {
     <div key={notification._id} className="relative">
       <div
         onClick={() => handleNotificationClick(notification._id)}
-        className={`p-4 rounded-lg shadow-md bg-[#37B874] flex items-start cursor-pointer hover:bg-gray-50 hover:text-[#37B874] transition-colors ${
+        className={`p-4 rounded-lg shadow-md bg-[#6a329f] flex items-start cursor-pointer hover:bg-gray-50 hover:text-[#6a329f] transition-colors ${
           notification.isSeen ? 'opacity-75' : 'font-semibold'
         }`}
       >

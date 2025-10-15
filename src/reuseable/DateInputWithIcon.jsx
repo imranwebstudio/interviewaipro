@@ -23,11 +23,11 @@ export const DateInputWithIcon = ({ value, onChange, name, disabled }) => {
         value={value}
         onChange={onChange}
         disabled={disabled}
-        className="w-full p-2 pr-10 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+        className="w-full p-2 pr-10 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
       />
       <FaCalendarAlt
         size={20}
-        className={`absolute right-3 top-2.5 cursor-pointer text-[#37B874] ${
+        className={`absolute right-3 top-2.5 cursor-pointer text-[#6a329f] ${
           disabled ? "opacity-50 cursor-not-allowed" : ""
         }`}
         onClick={disabled ? null : openDatePicker}

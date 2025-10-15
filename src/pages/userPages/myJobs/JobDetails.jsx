@@ -56,7 +56,7 @@ const JobDetails = () => {
             <p
               className={`w-26 text-center text-sm font-medium mb-2 rounded-lg p-2 ${
                 job.isApplied
-                  ? "bg-[#EBF8F1] text-[#37B874]"
+                  ? "bg-[#EBF8F1] text-[#6a329f]"
                   : "bg-[#EF9614]/15 text-[#EF9614]"
               }`}
             >
@@ -67,16 +67,16 @@ const JobDetails = () => {
             href="/userDashboard/mockInterview"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white bg-[#37B874] px-4 py-2 rounded-lg hover:bg-[#2e9664] transition mt-6"
+            className="inline-block text-white bg-[#6a329f] px-4 py-2 rounded-lg hover:bg-[#2e9664] transition mt-6"
           >
             Start Mock Interview
           </a>
           <p className="mb-2 text-[#AFAFAF] mt-6">
-            <span className="text-[#37B874]">Company: </span>
+            <span className="text-[#6a329f]">Company: </span>
             {job.company || "Not specified"}
           </p>
           <p className="flex items-center gap-2 text-[#3A4C67] mb-4">
-            <span className="text-[#37B874]">Location: </span>
+            <span className="text-[#6a329f]">Location: </span>
             <FaLocationDot className="bg-[#3A4C67] text-white p-[4px] rounded-full w-6 h-6" />
             <span className="text-sm text-[#676768]">
               {job.location || "Remote"}

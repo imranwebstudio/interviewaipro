@@ -24,7 +24,7 @@ const ViewHistory = ({ history }) => {
         <h1 className="text-center text-2xl md:text-3xl lg:text-3xl font-bold mb-8 text-[#293649]">
           You Have Completed This Interview
         </h1>
-        <h2 className="text-xl md:text-2xl lg:text-2xl font-semibold mb-4 text-[#37B874]">
+        <h2 className="text-xl md:text-2xl lg:text-2xl font-semibold mb-4 text-[#6a329f]">
           Interview History
         </h2>
         <div className="flex flex-col gap-4">

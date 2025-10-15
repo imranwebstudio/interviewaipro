@@ -408,11 +408,11 @@ const LoginOrSignup = () => {
         },
       });
 
-      if (res.ok && res.data?.data?.token) {
+      if (res.ok && res.data?.data) {
         console.log("i am here");
-        setOtpToken(res.data.data.token);
-        toast.success("✅ Check your email for OTP!");
-        setTimeout(() => navigate("/otp-crosscheck"), 1500);
+        setOtpToken(res.data.data);
+        toast.success("✅ User created successfully!");
+        setTimeout(() => navigate("/userDashBoard"), 1500);
       } else {
         toast.error(res.data.message || "Signup failed");
         console.error("Signup failed", res);
@@ -492,7 +492,7 @@ const LoginOrSignup = () => {
               text={
                 isLoggingIn ? (
                   <svg
-                    className="animate-spin h-5 w-5 mx-auto text-[#37B874]"
+                    className="animate-spin h-5 w-5 mx-auto text-[#6a329f]"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -518,7 +518,7 @@ const LoginOrSignup = () => {
               height="h-[60px]"
               rounded="rounded-[10px]"
               bgColor="bg-white"
-              textColor="text-[#37B874]"
+              textColor="text-[#6a329f]"
               onClick={triggerFunctionForLogIN}
             />
             <div className="w-full flex flex-col items-center mt-10 space-y-4 text-sm text-white">
@@ -632,7 +632,7 @@ const LoginOrSignup = () => {
                     className="block w-5 h-5 rounded border-[1px] border-white flex items-center justify-center"
                     style={{
                       backgroundColor: formData.aggriedToTerms
-                        ? "#37B874"
+                        ? "#6a329f"
                         : "#ffffff",
                       transition: "background-color 0.2s",
                     }}
@@ -657,7 +657,7 @@ const LoginOrSignup = () => {
               text={
                 isSigningUp ? (
                   <svg
-                    className="animate-spin h-5 w-5 mx-auto text-[#37B874]"
+                    className="animate-spin h-5 w-5 mx-auto text-[#6a329f]"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -683,7 +683,7 @@ const LoginOrSignup = () => {
               height="h-[60px]"
               rounded="rounded-[10px]"
               bgColor="bg-white"
-              textColor="text-[#37B874]"
+              textColor="text-[#6a329f]"
               onClick={triggerFunctionForSignUp}
             />
             <div className="w-full flex flex-col items-center mt-10 space-y-4 text-sm text-white">

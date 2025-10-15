@@ -11,11 +11,11 @@
 
 .react-tabs__tab--selected {
   background: #FFF !important;
-  border-color: #37B874 !important;
-  color: #37B874 !important;
+  border-color: #6a329f !important;
+  color: #6a329f !important;
   border-radius: 5px 5px 0 0 !important;
 }
 
 .react-tabs__tab-list {
-    border-bottom: 1px dotted #37B874 !important;
+    border-bottom: 1px dotted #6a329f !important;
 }

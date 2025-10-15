@@ -10,7 +10,7 @@ const OurJourney = () => {
       <h1
         className="text-center text-[26px] md:text-[32px] lg:text-[40px] font-semibold leading-[67.2px] mb-4 mx-auto mt-20"
         style={{
-          background: "linear-gradient(90deg, #195234 0.24%, #37B874 85.86%)",
+          background: "linear-gradient(90deg, #195234 0.24%, #6a329f 85.86%)",
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
@@ -50,7 +50,7 @@ const OurJourney = () => {
             className="text-left text-[26px] md:text-[32px] lg:text-[40px] font-semibold leading-[67.2px] mb-4 mx-auto"
             style={{
               background:
-                "linear-gradient(90deg, #195234 0.24%, #37B874 85.86%)",
+                "linear-gradient(90deg, #195234 0.24%, #6a329f 85.86%)",
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",

@@ -80,7 +80,7 @@ const GeneralSettings = () => {
       {/* 🔄 Loader Overlay */}
       {loading && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-white/80">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-[#37B874] border-solid"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-[#6a329f] border-solid"></div>
         </div>
       )}
 
@@ -102,7 +102,7 @@ const GeneralSettings = () => {
               placeholder="Enter platform name"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#37B874] bg-white mt-2"
+              className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6a329f] bg-white mt-2"
             />
           </div>
 
@@ -119,7 +119,7 @@ const GeneralSettings = () => {
                 className="absolute inset-0 opacity-0 cursor-pointer"
               />
               <div className="text-center pointer-events-none">
-                <p className="text-[#37B874] text-sm font-medium">
+                <p className="text-[#6a329f] text-sm font-medium">
                   Logo Upload
                 </p>
                 <p className="text-xs text-gray-400 mt-1">
@@ -173,7 +173,7 @@ const GeneralSettings = () => {
               placeholder="Enter tagline"
               value={triggerText}
               onChange={(e) => setTriggerText(e.target.value)}
-              className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#37B874] bg-white mt-2"
+              className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6a329f] bg-white mt-2"
             />
           </div>
 
@@ -181,7 +181,7 @@ const GeneralSettings = () => {
             <button
               onClick={handleSubmit}
               disabled={loading}
-              className="bg-[#37B874] text-white text-sm px-4 py-2 rounded-lg text-center"
+              className="bg-[#6a329f] text-white text-sm px-4 py-2 rounded-lg text-center"
             >
               {loading ? "Saving..." : "Save Changes"}
             </button>

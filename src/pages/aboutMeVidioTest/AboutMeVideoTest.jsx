@@ -129,7 +129,7 @@ const AboutMeVideoTest = () => {
     <Container>
       <div className="min-h-screen flex items-center justify-center w-full max-w-[1444px] mx-auto mt-20 mb-20">
         <div className="w-[80%] p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-4 text-center text-[#37B874]">
+          <h1 className="text-2xl font-bold mb-4 text-center text-[#6a329f]">
             {aboutMeResult
               ? "About Me Video Assessment"
               : "Record Your About Me Video"}
@@ -156,7 +156,7 @@ const AboutMeVideoTest = () => {
                       onClick={() =>
                         videoControllerRef.current?.stopRecording()
                       }
-                      className="px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors"
+                      className="px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors"
                     >
                       Stop and Submit Video
                     </button>
@@ -171,7 +171,7 @@ const AboutMeVideoTest = () => {
                   <div className="mt-4 text-center">
                     <button
                       onClick={submitAboutMeVideoTest}
-                      className="px-6 py-2 flex items-center justify-center gap-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
+                      className="px-6 py-2 flex items-center justify-center gap-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (

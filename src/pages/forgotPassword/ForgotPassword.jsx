@@ -127,7 +127,7 @@ const ForgotPassword = () => {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-3 py-2 border-1 border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874] text-gray-800 placeholder:text-gray-300"
+                className="w-full px-3 py-2 border-1 border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f] text-gray-800 placeholder:text-gray-300"
                 placeholder="Enter your email"
                 required
               />
@@ -135,7 +135,7 @@ const ForgotPassword = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#37B874] text-white py-2 rounded-lg hover:bg-[#195234] disabled:bg-green-300 cursor-pointer transition-colors duration-400"
+              className="w-full bg-[#6a329f] text-white py-2 rounded-lg hover:bg-[#195234] disabled:bg-green-300 cursor-pointer transition-colors duration-400"
             >
               {loading ? "Sending..." : "Send Email"}
             </button>
@@ -154,7 +154,7 @@ const ForgotPassword = () => {
                 id="otp"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
-                className="w-full px-3 py-2 border-1 border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874] text-gray-800 placeholder:text-gray-300"
+                className="w-full px-3 py-2 border-1 border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f] text-gray-800 placeholder:text-gray-300"
                 placeholder="Enter OTP received"
                 required
               />
@@ -162,7 +162,7 @@ const ForgotPassword = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#37B874] text-white py-2 rounded-lg hover:bg-[#195234] disabled:bg-green-300 cursor-pointer transition-colors duration-400"
+              className="w-full bg-[#6a329f] text-white py-2 rounded-lg hover:bg-[#195234] disabled:bg-green-300 cursor-pointer transition-colors duration-400"
             >
               {loading ? "Verifying..." : "Verify OTP"}
             </button>
@@ -181,7 +181,7 @@ const ForgotPassword = () => {
                 id="newPassword"
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                className="w-full px-3 py-2 border-1 border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874] text-gray-800 placeholder:text-gray-300"
+                className="w-full px-3 py-2 border-1 border-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f] text-gray-800 placeholder:text-gray-300"
                 placeholder="Enter new password"
                 required
               />
@@ -189,7 +189,7 @@ const ForgotPassword = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#37B874] text-white py-2 rounded-lg hover:bg-[#195234] disabled:bg-green-300"
+              className="w-full bg-[#6a329f] text-white py-2 rounded-lg hover:bg-[#195234] disabled:bg-green-300"
             >
               {loading ? "Resetting..." : "Reset Password"}
             </button>

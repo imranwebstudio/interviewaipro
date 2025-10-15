@@ -63,7 +63,7 @@ const MockInterview = () => {
 
   const InterviewCard = ({ interview }) => (
     <div className="bg-white shadow hover:shadow-md rounded-lg">
-      <div className="p-4 rounded-lg shadow hover:bg-[#37B874] hover:text-white transition flex items-center justify-between mt-4 group/items">
+      <div className="p-4 rounded-lg shadow hover:bg-[#6a329f] hover:text-white transition flex items-center justify-between mt-4 group/items">
         <div className="flex items-center gap-6">
           <img
             src={interview.img}
@@ -81,8 +81,8 @@ const MockInterview = () => {
           </div>
         </div>
         <Link to={`/userDashboard/mockInterview/${interview._id}`}>
-          <div className="w-[40px] h-[40px] rounded-full bg-[#37B874] flex justify-center items-center text-white group-hover/items:bg-white">
-            <FaArrowRight className="group-hover/items:text-[#37B874]"/>
+          <div className="w-[40px] h-[40px] rounded-full bg-[#6a329f] flex justify-center items-center text-white group-hover/items:bg-white">
+            <FaArrowRight className="group-hover/items:text-[#6a329f]"/>
           </div>
         </Link>
       </div>
@@ -92,7 +92,7 @@ const MockInterview = () => {
   const InterviewSection = ({ title, interviews }) =>
     interviews.length > 0 && (
       <div className="w-full mb-16">
-        <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-4 text-[#37B874] text-center tracking-wide">
+        <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-4 text-[#6a329f] text-center tracking-wide">
           {title}
         </h1>
         {interviews.length === 0 ? (
@@ -124,7 +124,7 @@ const MockInterview = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search interview..."
-              className="w-full px-4 py-2 pr-10 border-none bg-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+              className="w-full px-4 py-2 pr-10 border-none bg-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
             />
             <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none">
               <svg

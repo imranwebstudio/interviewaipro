@@ -122,7 +122,7 @@ const ChoosePlan = () => {
       <h1
         className="text-center text-[28px] md:text-[36px] lg:text-[60px] font-semibold leading-[67.2px] mb-12 mx-auto mt-16"
         style={{
-          background: "linear-gradient(90deg, #195234 0.24%, #37B874 85.86%)",
+          background: "linear-gradient(90deg, #195234 0.24%, #6a329f 85.86%)",
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
@@ -134,7 +134,7 @@ const ChoosePlan = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center mx-auto mb-12 gap-8">
         {/* Render Free Plan */}
         {freePlan && (
-          <div className="card w-84 md:w-84 lg:w-96 lg:p-[32px] h-[640px] bg-white text-[#3A4C67] border-1 border-[#37B874] relative">
+          <div className="card w-84 md:w-84 lg:w-96 lg:p-[32px] h-[640px] bg-white text-[#3A4C67] border-1 border-[#6a329f] relative">
             <div className="card-body text-start">
               <div className="text-start">
                 <h3 className="text-[24px] font-bold mb-2">{freePlan.name}</h3>
@@ -142,7 +142,7 @@ const ChoosePlan = () => {
                   {freePlan.description}
                 </p>
                 <h3 className="text-[16px] font-bold mb-2 mt-6">
-                  <span className="text-[#37B874] text-3xl">
+                  <span className="text-[#6a329f] text-3xl">
                     ${freePlan.priceMonthly}
                   </span>
                   {freePlan.priceLabel}
@@ -154,7 +154,7 @@ const ChoosePlan = () => {
               <ul className="flex flex-col gap-2 text-[16px] text-[#3A4C67] font-medium">
                 {freePlan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <FaCircleCheck className="text-[#37B874] bg-[#FFF] rounded-full w-4 h-4 border-none" />
+                    <FaCircleCheck className="text-[#6a329f] bg-[#FFF] rounded-full w-4 h-4 border-none" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -163,7 +163,7 @@ const ChoosePlan = () => {
                 <Link to="/userDashboard/mockInterview">
                   <button
                     type="button"
-                    className="flex items-center justify-center font-semibold transition duration-200 cursor-pointer h-12 w-full text-white bg-[#37B874] rounded-[12px]"
+                    className="flex items-center justify-center font-semibold transition duration-200 cursor-pointer h-12 w-full text-white bg-[#6a329f] rounded-[12px]"
                   >
                     Get Started
                   </button>
@@ -177,7 +177,7 @@ const ChoosePlan = () => {
         {paidPlans.map((plan, index) => (
           <div
             key={index}
-            className="card w-84 md:w-84 lg:w-96 lg:p-[32px] h-[640px] bg-white text-[#3A4C67] shadow-sm border-1 border-[#37B874] relative"
+            className="card w-84 md:w-84 lg:w-96 lg:p-[32px] h-[640px] bg-white text-[#3A4C67] shadow-sm border-1 border-[#6a329f] relative"
           >
             <div className="card-body text-start">
               <div className="text-start">
@@ -186,7 +186,7 @@ const ChoosePlan = () => {
                   {plan.description}
                 </p>
                 <h3 className="text-[16px] font-bold mb-2 mt-6">
-                  <span className="text-[#37B874] text-3xl">
+                  <span className="text-[#6a329f] text-3xl">
                     ${plan.priceMonthly}
                   </span>
                   {plan.priceLabel}
@@ -198,7 +198,7 @@ const ChoosePlan = () => {
               <ul className="flex flex-col gap-2 text-[16px] text-[#3A4C67] font-medium">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <FaCircleCheck className="text-[#37B874] bg-[#FFF] rounded-full w-4 h-4 border-none" />
+                    <FaCircleCheck className="text-[#6a329f] bg-[#FFF] rounded-full w-4 h-4 border-none" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -207,7 +207,7 @@ const ChoosePlan = () => {
                 <button
                   onClick={() => handleSubscribe(plan.priceId)}
                   type="button"
-                  className="flex items-center justify-center font-semibold transition duration-200 cursor-pointer h-12 w-full text-white bg-[#37B874] rounded-[12px]"
+                  className="flex items-center justify-center font-semibold transition duration-200 cursor-pointer h-12 w-full text-white bg-[#6a329f] rounded-[12px]"
                 >
                   Get Started
                 </button>

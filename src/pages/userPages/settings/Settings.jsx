@@ -146,7 +146,7 @@
 // //                   type={showOldPassword ? 'text' : 'password'}
 // //                   value={oldPassword}
 // //                   onChange={(e) => setOldPassword(e.target.value)}
-// //                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+// //                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 // //                 />
 // //                 <button
 // //                   type="button"
@@ -167,7 +167,7 @@
 // //                   type={showNewPassword ? 'text' : 'password'}
 // //                   value={newPassword}
 // //                   onChange={(e) => setNewPassword(e.target.value)}
-// //                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+// //                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 // //                 />
 // //                 <button
 // //                   type="button"
@@ -207,7 +207,7 @@
 // //                 <button
 // //                   type="submit"
 // //                   disabled={loading}
-// //                   className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
+// //                   className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
 // //                 >
 // //                   {loading ? <LoaderCircle className="animate-spin w-4 h-4" /> : null}
 // //                   Change Password
@@ -439,7 +439,7 @@
 //                   type={showOldPassword ? 'text' : 'password'}
 //                   value={oldPassword}
 //                   onChange={(e) => setOldPassword(e.target.value)}
-//                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+//                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 //                 />
 //                 <button
 //                   type="button"
@@ -460,7 +460,7 @@
 //                   type={showNewPassword ? 'text' : 'password'}
 //                   value={newPassword}
 //                   onChange={(e) => setNewPassword(e.target.value)}
-//                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+//                   className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 //                 />
 //                 <button
 //                   type="button"
@@ -500,7 +500,7 @@
 //                 <button
 //                   type="submit"
 //                   disabled={loading}
-//                   className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
+//                   className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
 //                 >
 //                   {loading ? <LoaderCircle className="animate-spin w-4 h-4" /> : null}
 //                   Change Password
@@ -517,7 +517,7 @@
 //               <button
 //                 onClick={handleOTPVerification}
 //                 disabled={loading}
-//                 className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-green-400 transition-colors disabled:opacity-50"
+//                 className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-green-400 transition-colors disabled:opacity-50"
 //               >
 //                 {loading ? <LoaderCircle className="animate-spin w-4 h-4" /> : null}
 //                 Get OTP
@@ -757,7 +757,7 @@ const Settings = () => {
                   type={showOldPassword ? 'text' : 'password'}
                   value={oldPassword}
                   onChange={(e) => setOldPassword(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 />
                 <button
                   type="button"
@@ -778,7 +778,7 @@ const Settings = () => {
                   type={showNewPassword ? 'text' : 'password'}
                   value={newPassword}
                   onChange={(e) => setNewPassword(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 />
                 <button
                   type="button"
@@ -818,7 +818,7 @@ const Settings = () => {
                 <button
                   type="submit"
                   disabled={isChangePasswordLoading}
-                  className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
+                  className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
                 >
                   {isChangePasswordLoading ? <LoaderCircle className="animate-spin w-4 h-4" /> : null}
                   Change Password
@@ -835,7 +835,7 @@ const Settings = () => {
               <button
                 onClick={handleOTPVerification}
                 disabled={isOTPVerificationLoading}
-                className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-green-400 transition-colors disabled:opacity-50"
+                className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-green-400 transition-colors disabled:opacity-50"
               >
                 {isOTPVerificationLoading ? <LoaderCircle className="animate-spin w-4 h-4" /> : null}
                 Get OTP

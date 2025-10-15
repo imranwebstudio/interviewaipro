@@ -14,18 +14,18 @@ const customSelectStyles = {
   control: (provided, state) => ({
     ...provided,
     backgroundColor: "white",
-    borderColor: "#37B874",
-    boxShadow: state.isFocused ? `0 0 0 1px #37B874` : "none",
+    borderColor: "#6a329f",
+    boxShadow: state.isFocused ? `0 0 0 1px #6a329f` : "none",
     "&:hover": {
-      borderColor: "#37B874",
+      borderColor: "#6a329f",
     },
   }),
   option: (provided, state) => ({
     ...provided,
     backgroundColor: state.isSelected
-      ? "#37B874"
+      ? "#6a329f"
       : state.isFocused
-      ? "#37B874"
+      ? "#6a329f"
       : "white",
     color: state.isSelected || state.isFocused ? "white" : "black",
     cursor: "pointer",
@@ -237,18 +237,18 @@ const Experience = () => {
     ]);
   };
 
+
   const handleSubmit = async () => {
-    const isValid = experiences.every(
+     const isValid = experiences?.every(
       (exp) =>
-        exp.jobTitle.trim() !== "" &&
-        exp.company.trim() !== "" &&
-        exp.city.trim() !== "" &&
-        exp.country.trim() !== "" &&
-        exp.responsibilities.trim() !== "" &&
-        exp.skills.length > 0 &&
-        exp.startDate.trim() !== "" &&
-        (exp.isOngoing || exp.endDate.trim() !== "") && // Ensure endDate is only required if not ongoing
-        exp.experienceDuration // Ensure experienceDuration is selected
+        exp?.jobTitle?.trim() !== "" &&
+        exp?.company?.trim() !== "" &&
+        exp?.city?.trim() !== "" &&
+        exp?.country?.value?.trim() !== "" &&
+        exp?.responsibilities?.trim() !== "" &&
+        exp?.skills?.length > 0 &&
+        exp?.startDate?.trim() !== "" &&
+        (exp?.isOngoing || exp.endDate.trim() !== "") // Ensure endDate is only required if not ongoing
     );
 
     if (!isValid) {
@@ -256,7 +256,7 @@ const Experience = () => {
       return;
     }
 
-    const dataToSubmit = experiences.map((exp) => ({
+    const dataToSubmit = experiences?.map((exp) => ({
       jobTitle: exp.jobTitle,
       company: exp.company,
       city: exp.city,
@@ -265,7 +265,7 @@ const Experience = () => {
       skills: exp.skills.map((skill) => skill.value),
       startDate: exp.startDate,
       endDate: exp.isOngoing ? "Ongoing" : exp.endDate,
-      experienceDuration: exp.experienceDuration.value,
+      experienceDuration: exp?.experienceDuration?.value,
     }));
 
     console.log(dataToSubmit); // This logs the data to the console before submitting it
@@ -343,7 +343,7 @@ const Experience = () => {
                       name="jobTitle"
                       value={exp.jobTitle}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Enter your job title"
                     />
                   </div>
@@ -358,7 +358,7 @@ const Experience = () => {
                       name="company"
                       value={exp.company}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Enter your company"
                     />
                   </div>
@@ -373,7 +373,7 @@ const Experience = () => {
                       name="city"
                       value={exp.city}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Enter your city"
                     />
                   </div>
@@ -388,7 +388,7 @@ const Experience = () => {
                       name="country"
                       value={exp.country}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Enter your country"
                     /> */}
                     <Select
@@ -410,7 +410,7 @@ const Experience = () => {
                       rows="4"
                       value={exp.responsibilities}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Describe your responsibilities"
                     />
                   </div>
@@ -464,7 +464,7 @@ const Experience = () => {
                       name="startDate"
                       value={exp.startDate}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                     />
                   </div> */}
 
@@ -478,7 +478,7 @@ const Experience = () => {
                       name="endDate"
                       value={exp.isOngoing ? "" : exp.endDate}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       disabled={exp.isOngoing}
                     />
                   </div>
@@ -570,7 +570,7 @@ const Experience = () => {
             <button
               type="button"
               onClick={handleAddMore}
-              className="text-[#37B874] font-semibold underline mb-2 block"
+              className="text-[#6a329f] font-semibold underline mb-2 block"
             >
               + Add More
             </button>

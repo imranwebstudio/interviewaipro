@@ -51,7 +51,7 @@ const MockInterviewDetail = () => {
   // Reusable Interview Card Component (adapted for question banks)
   const QuestionBankCard = ({ qb }) => (
     <div className="bg-white rounded-lg group/items">
-      <div className="p-4 rounded-lg shadow hover:bg-[#37B874] hover:text-white transition flex items-center justify-between mt-4">
+      <div className="p-4 rounded-lg shadow hover:bg-[#6a329f] hover:text-white transition flex items-center justify-between mt-4">
         <div className="grid grid-cols-3 md:flex lg:flex justify-items-center items-center gap-6">
           {/* Use a placeholder image since question_bank_ids doesn't have img */}
           <div className="h-[68px] w-[64px] bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
@@ -66,8 +66,8 @@ const MockInterviewDetail = () => {
         <Link
           to={`/userDashboard/mockInterview/questionBank?questionBank_id=${qb._id}`}
         >
-          <div className="w-[40px] h-[40px] rounded-full bg-[#37B874] flex justify-center items-center text-white group-hover/items:bg-white">
-            <FaArrowRight className="group-hover/items:text-[#37B874]"/>
+          <div className="w-[40px] h-[40px] rounded-full bg-[#6a329f] flex justify-center items-center text-white group-hover/items:bg-white">
+            <FaArrowRight className="group-hover/items:text-[#6a329f]"/>
           </div>
         </Link>
       </div>

@@ -9,7 +9,7 @@ const JobCard = () => {
         <div className="relative w-[70%] mx-auto">
           <input
             type="text"
-            className="w-full bg-white px-4 py-3 rounded-lg text-black text-justify pl-6 pr-12 border-none focus:border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874] transition duration-200 my-2 shadow-lg"
+            className="w-full bg-white px-4 py-3 rounded-lg text-black text-justify pl-6 pr-12 border-none focus:border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f] transition duration-200 my-2 shadow-lg"
             placeholder="Search"
           />
           <span className="absolute right-4 top-1/2 transform -translate-y-1/2">

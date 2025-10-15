@@ -126,7 +126,7 @@ const TermsAndConditions = () => {
         <div className="text-center">
           <a
             href="/"
-            className="inline-block px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors"
+            className="inline-block px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors"
           >
             Back to Home
           </a>

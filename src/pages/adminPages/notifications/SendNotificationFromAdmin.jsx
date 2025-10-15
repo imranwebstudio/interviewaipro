@@ -125,7 +125,7 @@ const SendNotificationFromAdmin = () => {
 
   return (
     <div className="max-w-3xl mx-auto mt-8 mb-10 px-0 md:px-4 lg:px-4">
-      <h2 className="text-xl sm:text-3xl font-bold mb4 text-center text-[#37B874] mb-4">
+      <h2 className="text-xl sm:text-3xl font-bold mb4 text-center text-[#6a329f] mb-4">
         Create New Notification
       </h2>
 
@@ -170,7 +170,7 @@ const SendNotificationFromAdmin = () => {
               {users.map((user) => (
                 <div
                   key={user._id}
-                  className={`p-2 hover:bg-[#37B874] hover:text-[#FFF] cursor-pointer ${
+                  className={`p-2 hover:bg-[#6a329f] hover:text-[#FFF] cursor-pointer ${
                     selectedRecipients.includes(user._id)
                       ? "font-bold text-green-600"
                       : ""
@@ -196,7 +196,7 @@ const SendNotificationFromAdmin = () => {
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#37B874] focus:outline-none text-black"
+            className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#6a329f] focus:outline-none text-black"
             rows={4}
             placeholder="Enter your notification message..."
             disabled={loading}
@@ -208,7 +208,7 @@ const SendNotificationFromAdmin = () => {
           <button
             type="submit"
             disabled={loading}
-            className="px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50 flex items-center justify-center gap-2 w-full sm:w-auto"
+            className="px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50 flex items-center justify-center gap-2 w-full sm:w-auto"
           >
             {loading && <LoaderCircle className="animate-spin w-4 h-4" />}
             Send

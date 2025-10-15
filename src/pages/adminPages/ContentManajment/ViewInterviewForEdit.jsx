@@ -115,7 +115,7 @@ const ViewInterviewForEdit = () => {
   // Question Bank Card Component
   const QuestionBankCard = ({ questionBank }) => (
     <div className="bg-white mb-5 hover:shadow-md rounded-lg">
-      <div className="p-4 rounded-lg shadow border-1 border-gray-300 hover:border-1 hover:border-[#37B874] transition block md:flex lg:flex items-center justify-between">
+      <div className="p-4 rounded-lg shadow border-1 border-gray-300 hover:border-1 hover:border-[#6a329f] transition block md:flex lg:flex items-center justify-between">
         <div className="flex items-center gap-6 mb-6 md:mb-0 lg:mb-0">
           {questionBank.img ? (
             <img

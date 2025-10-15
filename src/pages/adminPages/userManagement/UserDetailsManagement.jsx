@@ -272,14 +272,14 @@ const UserDetailsManagement = () => {
               handleUserAction(userId, "isBlocked", !userData.isBlocked)
             }
             className={`flex items-center gap-1 border-none px-4 py-2 rounded-lg ${
-              userData.isBlocked ? "bg-[#37B874]" : "bg-[#3A4C67]"
+              userData.isBlocked ? "bg-[#6a329f]" : "bg-[#3A4C67]"
             } text-sm text-white`}
           >
             {userData.isBlocked ? "Activate" : "Suspend"}
             <IoIosPause
               size={18}
               className={`bg-white ${
-                userData.isBlocked ? "text-[#37B874]" : "text-[#3A4C67]"
+                userData.isBlocked ? "text-[#6a329f]" : "text-[#3A4C67]"
               } rounded-full p-[1px]`}
             />
           </button>
@@ -332,7 +332,7 @@ const UserDetailsManagement = () => {
                 href={userData.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#37B874] font-semibold text-sm"
+                className="text-[#6a329f] font-semibold text-sm"
               >
                 View
               </a>
@@ -343,12 +343,12 @@ const UserDetailsManagement = () => {
                 {userData.skills.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="bg-[#EBF8F1] text-[#37B874] text-sm px-4 py-2 rounded-full inline-flex items-center gap-1"
+                    className="bg-[#EBF8F1] text-[#6a329f] text-sm px-4 py-2 rounded-full inline-flex items-center gap-1"
                   >
                     {skill}
                     <TiTick
                       size={14}
-                      className="bg-[#37B874] text-white rounded-full p-[1px]"
+                      className="bg-[#6a329f] text-white rounded-full p-[1px]"
                     />
                   </span>
                 ))}
@@ -360,7 +360,7 @@ const UserDetailsManagement = () => {
                 {userData.languages.map((lang, idx) => (
                   <span
                     key={idx}
-                    className="bg-[#EBF8F1] text-[#37B874] text-sm px-3 py-1 rounded-full"
+                    className="bg-[#EBF8F1] text-[#6a329f] text-sm px-3 py-1 rounded-full"
                   >
                     {lang.name} ({lang.proficiency})
                   </span>
@@ -399,7 +399,7 @@ const UserDetailsManagement = () => {
               </div>
               <a
                 href={userData.resumeUrl}
-                className="text-[#37B874] font-semibold text-sm"
+                className="text-[#6a329f] font-semibold text-sm"
               >
                 View
               </a>

@@ -128,7 +128,7 @@ const ContactForm = () => {
           className="max-w-full max-h-full object-contain"
         />
       </div>
-      <div className="w-[80%] mx-auto h-full px-8 items-center justify-center border-1 border-[#37B874] rounded-xl bg-white py-8">
+      <div className="w-[80%] mx-auto h-full px-8 items-center justify-center border-1 border-[#6a329f] rounded-xl bg-white py-8">
         <form onSubmit={handleSubmit}>
           <div className="form-group w-full">
             <div className="mb-4">
@@ -140,7 +140,7 @@ const ContactForm = () => {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#37B874] transition duration-200"
+                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#6a329f] transition duration-200"
                 required
               />
             </div>
@@ -154,7 +154,7 @@ const ContactForm = () => {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#37B874] transition duration-200"
+                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#6a329f] transition duration-200"
                 required
               />
             </div>
@@ -254,7 +254,7 @@ const ContactForm = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-r text-black text-left bg-[#F1F1F1] focus:border-[#37B874] transition duration-200"
+                  className="w-full p-2 border border-gray-300 rounded-r text-black text-left bg-[#F1F1F1] focus:border-[#6a329f] transition duration-200"
                   placeholder={selectedCountry.phoneCode}
                   // required
                 />
@@ -270,7 +270,7 @@ const ContactForm = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#37B874] transition duration-200"
+                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#6a329f] transition duration-200"
                 placeholder="@gmail.com"
                 required
               />
@@ -284,7 +284,7 @@ const ContactForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#37B874] transition duration-200"
+                className="w-full p-2 border border-gray-300 rounded text-black text-left bg-[#F1F1F1] focus:border-[#6a329f] transition duration-200"
                 rows="4"
                 required
               ></textarea>
@@ -293,7 +293,7 @@ const ContactForm = () => {
             <div className="flex justify-center items-center mt-8">
               <button
                 type="submit"
-                className="h-12 w-36 rounded-xl bg-[#37B874] text-white font-semibold hover:bg-[#2c9458] transition duration-200"
+                className="h-12 w-36 rounded-xl bg-[#6a329f] text-white font-semibold hover:bg-[#2c9458] transition duration-200"
               >
                 Send Message
               </button>

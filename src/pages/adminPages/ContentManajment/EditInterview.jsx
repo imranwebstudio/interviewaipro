@@ -279,7 +279,7 @@ const EditInterview = () => {
             <div className="mt-6 md:flex lg:flex justify-items-center md:justify-end lg:justify-end gap-4">
               <button
                 onClick={handleSubmitAll}
-                className="flex items-center gap-1 px-4 py-2 bg-[#37B874] text-white rounded-md hover:bg-[#2e9b64] transition mb-4 md:mb-0 lg:mb-0"
+                className="flex items-center gap-1 px-4 py-2 bg-[#6a329f] text-white rounded-md hover:bg-[#2e9b64] transition mb-4 md:mb-0 lg:mb-0"
               >
                 Submit All Changes
               </button>

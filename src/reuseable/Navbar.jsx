@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { throttle } from "lodash";
 import Buttons from "./AllButtons";
 // import img1 from "../assets/logos/inprep.png";
+import interviewLogo from "../assets/interviewai-pro-logo.svg";
 import { TiThMenu } from "react-icons/ti";
 import { useAuth } from "../context/AuthProvider";
 import axios from "axios";
@@ -88,7 +89,7 @@ const Navbar = () => {
       <div
         className={`max-w-screen mx-auto backdrop-blur-md bg-black/10  ${
           scrolled
-            ? "bg-emerald-500 shadow-md transition-all duration-150"
+            ? "bg-purple-600 shadow-md transition-all duration-150"
             : "bg-transparent"
         }`}
       >
@@ -99,7 +100,7 @@ const Navbar = () => {
               <div
                 tabIndex={0}
                 role="button"
-                className="text-[#37B874] border-none lg:hidden rounded-xl"
+                className="text-[#6a329f] border-none lg:hidden rounded-xl"
               >
                 <TiThMenu
                   className={`h-8 w-8 mx-2 ${
@@ -123,8 +124,8 @@ const Navbar = () => {
             </Link> */}
             <Link to="/">
               <img
-                src={websiteData?.logoUrl}
-                alt="logo"
+                src={interviewLogo}
+                alt="InterviewAI Pro Logo"
                 className="h-[40px] w-[118px]"
               />
             </Link>
@@ -155,7 +156,7 @@ const Navbar = () => {
                 onClick={handleLogout}
                 height="h-[44px]"
                 width="w-[94px]"
-                textColor={scrolled ? "text-[#37B874] bg-white" : "text-[#FFF]"}
+                textColor={scrolled ? "text-[#6a329f] bg-white" : "text-[#FFF]"}
               />
             ) : (
               <div className="flex justify-items-center items-center gap-4">
@@ -165,7 +166,7 @@ const Navbar = () => {
                   height="h-[32px] md:h-[44px] lg:h-[44px]"
                   width="w-[72px] md:w-[94px] lg:w-[94px]"
                   textColor={
-                    scrolled ? "text-[#37B874] bg-white" : "text-[#FFF]"
+                    scrolled ? "text-[#6a329f] bg-white" : "text-[#FFF]"
                   }
                 />
                 <Buttons.LinkButton
@@ -174,7 +175,7 @@ const Navbar = () => {
                   height="h-[32px] md:h-[44px] lg:h-[44px]"
                   width="w-[72px] md:w-[94px] lg:w-[94px]"
                   textColor={
-                    scrolled ? "text-[#37B874] bg-white" : "text-[#FFF]"
+                    scrolled ? "text-[#6a329f] bg-white" : "text-[#FFF]"
                   }
                 />
               </div>

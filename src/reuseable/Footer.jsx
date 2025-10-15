@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "../assets/footer-logo.png";
+import footerLogo from "../assets/interviewai-pro-logo.svg";
 import Buttons from "./AllButtons";
 
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </aside>
         <nav>
-          <h6 className="text-[16px] text-[#37B874] font-medium leading-[130%] mb-5">
+          <h6 className="text-[16px] text-[#6a329f] font-medium leading-[130%] mb-5">
             Quick Links
           </h6>
           <a
@@ -64,7 +64,7 @@ const Footer = () => {
           </a>
         </nav>
         <nav>
-          <h6 className="text-[16px] text-[#37B874] font-medium leading-[130%] mb-5">
+          <h6 className="text-[16px] text-[#6a329f] font-medium leading-[130%] mb-5">
             Legal & Support
           </h6>
           <a
@@ -87,7 +87,7 @@ const Footer = () => {
           </a>
         </nav>
         <nav className="max-w-xs font-sans">
-  <h6 className="text-[16px] text-[#37B874] font-medium leading-[130%] mb-5">
+  <h6 className="text-[16px] text-[#6a329f] font-medium leading-[130%] mb-5">
     Contact Info
   </h6>
   <div className="flex items-start mb-3">
@@ -96,7 +96,7 @@ const Footer = () => {
     </span>
     <a
       href="mailto:inprep@hyrworx.com"
-      className="text-[#E0E0E1] text-[14px] font-medium leading-[130%] hover:text-[#37B874] hover:underline transition-colors duration-200"
+      className="text-[#E0E0E1] text-[14px] font-medium leading-[130%] hover:text-[#6a329f] hover:underline transition-colors duration-200"
     >
       inprep@hyrworx.com
     </a>
@@ -108,7 +108,7 @@ const Footer = () => {
     <a
       href="https://www.google.com/maps?q=13010+Morris+Road,+Suite+670,+Alpharetta,+GA,+30004"
       target="_blank"
-      className="text-[#E0E0E1] text-[14px] font-medium leading-[130%] hover:text-[#37B874] hover:underline transition-colors duration-200"
+      className="text-[#E0E0E1] text-[14px] font-medium leading-[130%] hover:text-[#6a329f] hover:underline transition-colors duration-200"
     >
       <span className="block">Inprep, A Hyrworx Product</span>
       <span className="block">13010 Morris Road, Suite 670</span>

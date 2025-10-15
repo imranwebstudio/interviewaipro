@@ -9,7 +9,7 @@ const LinkButton = ({
   height = "h-full",
   width = "w-full",
   textColor = "text-white",
-  bgColor = "bg-[#37B874]",
+  bgColor = "bg-[#6a329f]",
   rounded = "rounded-4xl",
 }) => {
   return (
@@ -28,7 +28,7 @@ const OnClickButton = ({
   height = "h-full",
   width = "w-full",
   textColor = "text-white",
-  bgColor = "bg-[#37B874]",
+  bgColor = "bg-[#6a329f]",
   rounded = "rounded-4xl",
 }) => {
   return (
@@ -66,7 +66,7 @@ const SubmitButton = ({
   height = "h-[40px]",
   width = "w-full",
   textColor = "text-white",
-  bgColor = "bg-[#37B874]",
+  bgColor = "bg-[#6a329f]",
   rounded = "rounded-[12px]",
   onClick,
   type = "button",

@@ -14,7 +14,7 @@ const LogoFrame = () => {
   return (
     <div className="pt-14 px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col items-center">
-        <h1 className="text-center text-[28px] md:text-[36px] lg:text-[64px] font-semibold leading-tight bg-gradient-to-r from-[#195234] to-[#37B874] bg-clip-text text-transparent max-w-[864px]">
+        <h1 className="text-center text-[28px] md:text-[36px] lg:text-[64px] font-semibold leading-tight bg-gradient-to-r from-[#195234] to-[#6a329f] bg-clip-text text-transparent max-w-[864px]">
           As Seen In
         </h1>
         <div className="flex flex-wrap justify-center gap-4 lg:gap-8">

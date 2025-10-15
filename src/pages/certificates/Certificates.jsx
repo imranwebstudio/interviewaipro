@@ -12,18 +12,18 @@
 //   control: (provided, state) => ({
 //     ...provided,
 //     backgroundColor: "white",
-//     borderColor: "#37B874",
-//     boxShadow: state.isFocused ? `0 0 0 1px #37B874` : "none",
+//     borderColor: "#6a329f",
+//     boxShadow: state.isFocused ? `0 0 0 1px #6a329f` : "none",
 //     "&:hover": {
-//       borderColor: "#37B874",
+//       borderColor: "#6a329f",
 //     },
 //   }),
 //   option: (provided, state) => ({
 //     ...provided,
 //     backgroundColor: state.isSelected
-//       ? "#37B874"
+//       ? "#6a329f"
 //       : state.isFocused
-//       ? "#37B874"
+//       ? "#6a329f"
 //       : "white",
 //     color: state.isSelected || state.isFocused ? "white" : "black",
 //     cursor: "pointer",
@@ -206,7 +206,7 @@
 //                       name="institution"
 //                       value={edu.institution}
 //                       onChange={(e) => handleChange(index, e)}
-//                       className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+//                       className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 //                       placeholder="Enter institution name"
 //                       required
 //                     />
@@ -234,7 +234,7 @@
 //                       name="majorField"
 //                       value={edu.majorField}
 //                       onChange={(e) => handleChange(index, e)}
-//                       className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+//                       className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 //                       placeholder="Enter major field of study"
 //                       required
 //                     />
@@ -249,7 +249,7 @@
 //                       name="startDate"
 //                       value={edu.startDate}
 //                       onChange={(e) => handleChange(index, e)}
-//                       className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+//                       className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 //                       required
 //                     />
 //                   </div>
@@ -263,7 +263,7 @@
 //                       name="completionDate"
 //                       value={edu.isOngoing ? "" : edu.completionDate}
 //                       onChange={(e) => handleChange(index, e)}
-//                       className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+//                       className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
 //                       required={!edu.isOngoing} // Make it required only if not ongoing
 //                       disabled={edu.isOngoing} // Disable if ongoing
 //                     />
@@ -289,7 +289,7 @@
 //                     <button
 //                       type="button"
 //                       onClick={handleAddMore}
-//                       className="text-[#37B874] font-semibold underline mt-2"
+//                       className="text-[#6a329f] font-semibold underline mt-2"
 //                     >
 //                       + Add More
 //                     </button>
@@ -351,18 +351,18 @@ const customSelectStyles = {
   control: (provided, state) => ({
     ...provided,
     backgroundColor: "white",
-    borderColor: "#37B874",
-    boxShadow: state.isFocused ? `0 0 0 1px #37B874` : "none",
+    borderColor: "#6a329f",
+    boxShadow: state.isFocused ? `0 0 0 1px #6a329f` : "none",
     "&:hover": {
-      borderColor: "#37B874",
+      borderColor: "#6a329f",
     },
   }),
   option: (provided, state) => ({
     ...provided,
     backgroundColor: state.isSelected
-      ? "#37B874"
+      ? "#6a329f"
       : state.isFocused
-      ? "#37B874"
+      ? "#6a329f"
       : "white",
     color: state.isSelected || state.isFocused ? "white" : "black",
     cursor: "pointer",
@@ -612,7 +612,7 @@ const EducationCertificate = () => {
                       name="institution"
                       value={edu.institution}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Enter institution name"
                       required
                     />
@@ -640,7 +640,7 @@ const EducationCertificate = () => {
                       name="majorField"
                       value={edu.majorField}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       placeholder="Enter major field of study"
                       required
                     />
@@ -655,7 +655,7 @@ const EducationCertificate = () => {
                       name="startDate"
                       value={edu.startDate}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       required
                     />
                   </div>
@@ -669,7 +669,7 @@ const EducationCertificate = () => {
                       name="completionDate"
                       value={edu.isOngoing ? "" : edu.completionDate}
                       onChange={(e) => handleChange(index, e)}
-                      className="w-full p-2 border rounded bg-white text-black border-[#37B874] focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                      className="w-full p-2 border rounded bg-white text-black border-[#6a329f] focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                       required={!edu.isOngoing}
                       disabled={edu.isOngoing}
                     />
@@ -740,7 +740,7 @@ const EducationCertificate = () => {
                     <button
                       type="button"
                       onClick={handleAddMore}
-                      className="text-[#37B874] font-semibold underline mt-2"
+                      className="text-[#6a329f] font-semibold underline mt-2"
                     >
                       + Add More
                     </button>

@@ -433,7 +433,7 @@ const Dashboard = () => {
         {/* <div>
           <Link
             to="/"
-            className="btn border-none rounded-lg bg-[#37B874] text-white text-sm md:text-md lg:text-lg font-medium w-24 md:w-32 lg:w-42 h-12"
+            className="btn border-none rounded-lg bg-[#6a329f] text-white text-sm md:text-md lg:text-lg font-medium w-24 md:w-32 lg:w-42 h-12"
           >
             Add Interview
           </Link>

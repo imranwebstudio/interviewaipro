@@ -173,7 +173,7 @@ const CreateInterview = ({setInterviwUploadReload}) => {
               name="interview_name"
               value={formData.interview_name}
               onChange={handleInputChange}
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#37B874]"
+              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#6a329f]"
               placeholder="e.g., Software Developer 5x"
             />
             {errors.interview_name && (
@@ -188,7 +188,7 @@ const CreateInterview = ({setInterviwUploadReload}) => {
               name="description"
               value={formData.description}
               onChange={handleInputChange}
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#37B874]"
+              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#6a329f]"
               placeholder="e.g., A mock interview for software developer candidates."
               rows={4}
             />
@@ -202,7 +202,7 @@ const CreateInterview = ({setInterviwUploadReload}) => {
             <button
               type="submit"
               disabled={loading}
-              className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#37B874] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
+              className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-[#6a329f] rounded-lg hover:bg-[#2e9b64] transition-colors disabled:opacity-50"
             >
               {loading && <LoaderCircle className="animate-spin w-4 h-4" />}
               Create Interview

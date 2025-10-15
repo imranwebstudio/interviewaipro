@@ -191,11 +191,11 @@ const PrivacyOptions = () => {
 
     return (
       <div className="overflow-auto h-[480px] mt-4">
-        <table className="min-w-full border-2 border-[#37B874]">
+        <table className="min-w-full border-2 border-[#6a329f]">
           <thead>
-            <tr className="bg-[#37B874] text-white text-center">
+            <tr className="bg-[#6a329f] text-white text-center">
               {Object.keys(data[0]).map((key) => (
-                <th key={key} className="px-4 py-2 border-r-2 border-[#37B874]">
+                <th key={key} className="px-4 py-2 border-r-2 border-[#6a329f]">
                   {key}
                 </th>
               ))}
@@ -203,9 +203,9 @@ const PrivacyOptions = () => {
           </thead>
           <tbody>
             {data.map((row, idx) => (
-              <tr key={idx} className="border-t-2 border-[#37B874]">
+              <tr key={idx} className="border-t-2 border-[#6a329f]">
                 {Object.keys(data[0]).map((key, i) => (
-                  <td key={i} className="px-4 py-2 border-r-2 border-[#37B874]">
+                  <td key={i} className="px-4 py-2 border-r-2 border-[#6a329f]">
                     {typeof row[key] === "object" && row[key] !== null
                       ? JSON.stringify(row[key])
                       : String(row[key])}

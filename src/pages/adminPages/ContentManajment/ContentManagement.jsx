@@ -16,7 +16,7 @@ const ContentManagement = () => {
 
       <button
         onClick={() => navigate("addInterviewAndQuestionBank")}
-        className="bg-[#37B874] hover:bg-[#2e9b64] text-white text-sm font-semibold py-2 px-4 rounded flex items-center gap-2 mt-4 md:mt-0 lg:mt-0"
+        className="bg-[#6a329f] hover:bg-[#2e9b64] text-white text-sm font-semibold py-2 px-4 rounded flex items-center gap-2 mt-4 md:mt-0 lg:mt-0"
       >
         Add Interview
         <span className="text-xl leading-none">+</span>

@@ -143,8 +143,8 @@ const JobList = () => {
             onClick={() => setShowFilters(!showFilters)}
             className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg transition"
           >
-            <FaFilter className="text-[#37B874]" />
-            <span className="text-[#37B874]">Filter</span>
+            <FaFilter className="text-[#6a329f]" />
+            <span className="text-[#6a329f]">Filter</span>
           </button>
         </div>
 
@@ -163,7 +163,7 @@ const JobList = () => {
                 <select
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
-                  className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 >
                   <option value="">All Companies</option>
                   {companies.map((comp) => (
@@ -180,7 +180,7 @@ const JobList = () => {
                 <select
                   value={position}
                   onChange={(e) => setPosition(e.target.value)}
-                  className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 >
                   <option value="">All Positions</option>
                   {positions.map((pos) => (
@@ -197,7 +197,7 @@ const JobList = () => {
                 <select
                   value={year}
                   onChange={(e) => setYear(e.target.value)}
-                  className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 >
                   <option value="">All Years</option>
                   {years.map((yr) => (
@@ -214,7 +214,7 @@ const JobList = () => {
                 <select
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 >
                   <option value="">All Locations</option>
                   {locations.map((loc) => (
@@ -231,7 +231,7 @@ const JobList = () => {
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value)}
-                  className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                  className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                 >
                   <option value="">All Statuses</option>
                   {statuses.map((stat) => (
@@ -272,7 +272,7 @@ const JobList = () => {
               <p
                 className={`w-26 text-center text-sm font-medium mb-2 rounded-lg p-2 ${
                   job.isApplied
-                    ? "bg-[#EBF8F1] text-[#37B874]"
+                    ? "bg-[#EBF8F1] text-[#6a329f]"
                     : "bg-[#EF9614]/15 text-[#EF9614]"
                 }`}
               >
@@ -282,7 +282,7 @@ const JobList = () => {
             <div className="w-[30%] text-right col-span-1 flex flex-col items-end">
               <Link
                 to={`/userDashboard/job-details/${job._id}`}
-                className="inline-block text-white bg-[#37B874] px-2 py-2 rounded-full hover:bg-[#37B874] transition"
+                className="inline-block text-white bg-[#6a329f] px-2 py-2 rounded-full hover:bg-[#6a329f] transition"
               >
                 <FaArrowRight className="text-right" />
               </Link>

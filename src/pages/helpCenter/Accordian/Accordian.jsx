@@ -43,7 +43,7 @@ const Accordian = () => {
                 className="peer"
                 defaultChecked={idx === 0}
               />
-              <h4 className="collapse-title text-md font-semibold transition-colors peer-checked:text-[#3A4C67] peer-checked:[&::after]:text-[#37B874] text-[18px]">
+              <h4 className="collapse-title text-md font-semibold transition-colors peer-checked:text-[#3A4C67] peer-checked:[&::after]:text-[#6a329f] text-[18px]">
                 {q.title}
               </h4>
               <div className="collapse-content">

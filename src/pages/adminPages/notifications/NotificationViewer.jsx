@@ -90,7 +90,7 @@ const NotificationViewer = () => {
 
   return (
     <div className="w-full max-w-[1444px] mx-auto mt-6 mb-10 px-0 sm:px-6 lg:px-8">
-      <h2 className="text-xl sm:text-3xl font-bold mb-6 text-center text-[#37B874]">
+      <h2 className="text-xl sm:text-3xl font-bold mb-6 text-center text-[#6a329f]">
         Notification Viewer
       </h2>
       <div className="p-4 sm:p-6 rounded-lg shadow-md bg-white">
@@ -106,7 +106,7 @@ const NotificationViewer = () => {
             id="notificationType"
             value={selectedType}
             onChange={handleTypeChange}
-            className="w-full sm:w-auto p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#37B874]"
+            className="w-full sm:w-auto p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#6a329f]"
           >
             <option value="">All (except admin_notification)</option>
             <option value="interview_Progress">Interview Progress</option>
@@ -119,7 +119,7 @@ const NotificationViewer = () => {
         {/* Loading and Error States */}
         {loading && (
           <div className="flex justify-center items-center">
-            <LoaderCircle className="animate-spin w-6 h-6 text-[#37B874]" />
+            <LoaderCircle className="animate-spin w-6 h-6 text-[#6a329f]" />
           </div>
         )}
         {error && (
@@ -176,7 +176,7 @@ const NotificationViewer = () => {
                   </div>
                   <span
                     className={`${
-                      notification.isSeen ? "bg-gray-300" : "bg-[#37B874]"
+                      notification.isSeen ? "bg-gray-300" : "bg-[#6a329f]"
                     } text-white rounded-full w-6 h-6 flex items-center justify-center mt-2 sm:mt-0 sm:ml-4 flex-shrink-0`}
                   >
                     {notification.isSeen ? "S" : "U"}
@@ -201,7 +201,7 @@ const NotificationViewer = () => {
                     onClick={() => setCurrentPage(1)}
                     className={`px-3 py-2 rounded ${
                       currentPage === 1
-                        ? "bg-[#37B874] text-white"
+                        ? "bg-[#6a329f] text-white"
                         : "bg-gray-500"
                     }`}
                   >
@@ -226,7 +226,7 @@ const NotificationViewer = () => {
                     onClick={() => setCurrentPage(page)}
                     className={`px-3 py-2 rounded cursor-pointer ${
                       currentPage === page
-                        ? "bg-[#37B874] text-white"
+                        ? "bg-[#6a329f] text-white"
                         : "bg-gray-500"
                     }`}
                   >
@@ -243,7 +243,7 @@ const NotificationViewer = () => {
                     onClick={() => setCurrentPage(totalPages)}
                     className={`px-3 py-2 rounded cursor-pointer ${
                       currentPage === totalPages
-                        ? "bg-[#37B874] text-white"
+                        ? "bg-[#6a329f] text-white"
                         : "bg-gray-500"
                     }`}
                   >

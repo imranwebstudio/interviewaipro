@@ -131,7 +131,7 @@ const OtpCrossCheck = ({ adminOTPToken, navigateTo }) => {
       <div className="shadow-lg rounded-2xl p-8 w-full max-w-md bg-white">
         <div className="flex flex-col items-center">
           <img src={img1} alt="mobile" className="w-24 h-24 mb-6" />
-          <h2 className="text-2xl font-semibold text-[#37B874] mb-2">Verify OTP</h2>
+          <h2 className="text-2xl font-semibold text-[#6a329f] mb-2">Verify OTP</h2>
           <p className="text-center text-gray-600 mb-6">
             Please provide the OTP sent to your email
           </p>
@@ -146,7 +146,7 @@ const OtpCrossCheck = ({ adminOTPToken, navigateTo }) => {
                   maxLength="1"
                   value={digit}
                   onChange={(e) => handleChange(idx, e.target.value)}
-                  className="w-10 h-12 text-center border border-gray-400 rounded-md text-lg focus:outline-none focus:border-[#37B874] transition duration-200"
+                  className="w-10 h-12 text-center border border-gray-400 rounded-md text-lg focus:outline-none focus:border-[#6a329f] transition duration-200"
                 />
               ))}
             </div>
@@ -154,7 +154,7 @@ const OtpCrossCheck = ({ adminOTPToken, navigateTo }) => {
             <button
               type="submit"
               disabled={verifyLoading}
-              className={`w-full py-3 px-4 bg-[#37B874] text-white rounded-md hover:bg-[#2ea664] transition duration-200 hover:shadow-md flex items-center justify-center ${
+              className={`w-full py-3 px-4 bg-[#6a329f] text-white rounded-md hover:bg-[#2ea664] transition duration-200 hover:shadow-md flex items-center justify-center ${
                 verifyLoading ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >
@@ -188,7 +188,7 @@ const OtpCrossCheck = ({ adminOTPToken, navigateTo }) => {
                 type="button"
                 onClick={handleResend}
                 disabled={resendLoading || resendDisabled}
-                className="text-sm text-[#37B874] hover:underline"
+                className="text-sm text-[#6a329f] hover:underline"
               >
                 {resendLoading ? 'Resending...' : 'Resend OTP'}
               </button>

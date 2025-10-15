@@ -220,7 +220,7 @@ const UserManagement = () => {
           </p>
         </div>
         <Link to="create-admin">
-        <button className="bg-[#37B874] hover:bg-[#174D31] text-white p-4 rounded-xl cursor-pointer">Create Admin</button></Link>
+        <button className="bg-[#6a329f] hover:bg-[#174D31] text-white p-4 rounded-xl cursor-pointer">Create Admin</button></Link>
       </div>
 
       <div className="mt-8">
@@ -232,14 +232,14 @@ const UserManagement = () => {
               placeholder="Search for users by name or email..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full px-4 py-2 border border-[#E0E0E1] bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+              className="w-full px-4 py-2 border border-[#E0E0E1] bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
             />
             <button
               onClick={() => setShowFilters(!showFilters)}
               className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg transition"
             >
-              <FaFilter className="text-[#37B874]" />
-              <span className="text-[#37B874]">Filter</span>
+              <FaFilter className="text-[#6a329f]" />
+              <span className="text-[#6a329f]">Filter</span>
             </button>
           </div>
 
@@ -258,7 +258,7 @@ const UserManagement = () => {
                   <select
                     value={plan}
                     onChange={(e) => setPlan(e.target.value)}
-                    className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                    className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                   >
                     <option value="">All Plans</option>
                     {plans.map((p) => (
@@ -275,7 +275,7 @@ const UserManagement = () => {
                   <select
                     value={status}
                     onChange={(e) => setStatus(e.target.value)}
-                    className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                    className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                   >
                     <option value="">All Statuses</option>
                     {statuses.map((s) => (
@@ -292,7 +292,7 @@ const UserManagement = () => {
                   <select
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
-                    className="w-full text-[#37B874] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#37B874]"
+                    className="w-full text-[#6a329f] px-2 py-[5px] border border-[#EBEBEB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6a329f]"
                   >
                     <option value="">All Roles</option>
                     {roles.map((r) => (
@@ -309,7 +309,7 @@ const UserManagement = () => {
 
         {loading ? (
           <div className="flex justify-items-center items-center text-center space-x-3">
-            <div className="w-6 h-6 border-4 border-[#37B874] border-t-transparent rounded-full animate-spin text-center"></div>
+            <div className="w-6 h-6 border-4 border-[#6a329f] border-t-transparent rounded-full animate-spin text-center"></div>
             <p className="text-[#676768] text-lg text-center">Loading...</p>
           </div>
         ) : error ? (
@@ -368,7 +368,7 @@ const UserManagement = () => {
                     <div
                       className={`flex items-end border rounded-full px-4 py-1 text-sm font-medium w-fit ${
                         user.isLoggedIn
-                          ? "text-[#37B874] border-[#37B874]"
+                          ? "text-[#6a329f] border-[#6a329f]"
                           : "text-red-500 border-red-500"
                       }`}
                     >
@@ -378,7 +378,7 @@ const UserManagement = () => {
                 </div>
 
                 <div className="col-span-1 flex gap-3 w-full md:w-auto justify-end md:justify-start">
-                  <button className="bg-[#37B874] text-white rounded-md px-4 py-1 text-sm font-medium cursor-pointer">
+                  <button className="bg-[#6a329f] text-white rounded-md px-4 py-1 text-sm font-medium cursor-pointer">
                     Edit
                   </button>
                   <div

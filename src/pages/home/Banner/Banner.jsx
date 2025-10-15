@@ -17,7 +17,7 @@ const Banner = () => {
 
   return (
     <div id="banner" className="text-black text-center pt-24">
-      <h1 className="text-center text-[28px] md:text-[36px] lg:text-[60px] font-semibold leading-[67.2px] bg-gradient-to-r from-[#195234] to-[#37B874] bg-clip-text text-transparent mb-12 md:w-[450px] lg:w-[820px] mx-auto px-2 md:px-0 lg:px-0">
+      <h1 className="text-center text-[28px] md:text-[36px] lg:text-[60px] font-semibold leading-[67.2px] bg-gradient-to-r from-[#3d1e5a] to-[#6a329f] bg-clip-text text-transparent mb-12 md:w-[450px] lg:w-[820px] mx-auto px-2 md:px-0 lg:px-0">
         {landingData.banner.title}
       </h1>
 
@@ -78,7 +78,7 @@ const Banner = () => {
                 to="/userDashboard/mockInterview"
                 className="cursor-pointer"
               >
-                <FaArrowRight className="bg-[#37B874] text-white rounded-full w-8 h-8 p-2" />
+                <FaArrowRight className="bg-[#6a329f] text-white rounded-full w-8 h-8 p-2" />
               </Link>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Banner = () => {
                 to="/userDashboard/mockInterview"
                 className="cursor-pointer"
               >
-                <FaArrowRight className="bg-[#37B874] text-white rounded-full w-8 h-8 p-2" />
+                <FaArrowRight className="bg-[#6a329f] text-white rounded-full w-8 h-8 p-2" />
               </Link>
             </div>
           </div>

@@ -19,7 +19,7 @@ const featuresData = [
       {
         heading: "How It Works?",
         description: [
-          { text: "Receive Custom Questions: ", color: "#37B874" },
+          { text: "Receive Custom Questions: ", color: "#6a329f" },
           {
             text: (
               <>
@@ -31,7 +31,7 @@ const featuresData = [
             ),
           },
 
-          { text: "Practice & Prepare: ", color: "#37B874" },
+          { text: "Practice & Prepare: ", color: "#6a329f" },
           {
             text: "Based on your resume and job details, inprep.ai provides tailored interview questions that reflect the key responsibilities and expectations.",
           },
@@ -57,7 +57,7 @@ const featuresData = [
       {
         heading: "How It Works?",
         description:[
-            {text: "Complete Your Mock Interview: ", color: "#37B874"},
+            {text: "Complete Your Mock Interview: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -66,7 +66,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Instant Feedback: ", color: "#37B874"},
+            {text: "Instant Feedback: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -76,7 +76,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Detailed Report: ", color: "#37B874"},
+            {text: "Detailed Report: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -106,7 +106,7 @@ const featuresData = [
       {
         heading: "How It Works?",
         description:[
-            {text: "Install the Chrome Extension: ", color: "#37B874"},
+            {text: "Install the Chrome Extension: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -115,7 +115,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Track Jobs: ", color: "#37B874"},
+            {text: "Track Jobs: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -125,7 +125,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Review & Prepare: ", color: "#37B874"},
+            {text: "Review & Prepare: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -155,7 +155,7 @@ const featuresData = [
       {
         heading: "How It Works?",
         description:[
-            {text: "Complete Your Mock Interview: ", color: "#37B874"},
+            {text: "Complete Your Mock Interview: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -164,7 +164,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Receive Your Inprep Score: ", color: "#37B874"},
+            {text: "Receive Your Inprep Score: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -174,7 +174,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Actionable Insights: ", color: "#37B874"},
+            {text: "Actionable Insights: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -204,7 +204,7 @@ const featuresData = [
       {
         heading: "How It Works?",
         description:[
-            {text: "Complete Multiple Mock Interviews: ", color: "#37B874"},
+            {text: "Complete Multiple Mock Interviews: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -213,7 +213,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Track Your Progress: ", color: "#37B874"},
+            {text: "Track Your Progress: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -223,7 +223,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Review Your Improvement: ", color: "#37B874"},
+            {text: "Review Your Improvement: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -253,7 +253,7 @@ const featuresData = [
       {
         heading: "How It Works?",
         description:[
-            {text: "Complete Your Mock Interview: ", color: "#37B874"},
+            {text: "Complete Your Mock Interview: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -262,7 +262,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Receive Personalized Feedback: ", color: "#37B874"},
+            {text: "Receive Personalized Feedback: ", color: "#6a329f"},
             {
               text: (
                 <>
@@ -272,7 +272,7 @@ const featuresData = [
                 </>
               ),
             },
-            {text: "Review & Improve: ", color: "#37B874"},
+            {text: "Review & Improve: ", color: "#6a329f"},
             {
               text: (
                 <>

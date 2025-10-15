@@ -15,8 +15,6 @@ const Notification = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  console.log("just to remove the red line",notifications)
-  console.log(loading, error)
 
   const fetchNotifications = async () => {
     if (!user?.approvalToken) {

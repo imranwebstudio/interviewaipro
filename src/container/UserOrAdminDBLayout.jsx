@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation, Outlet, Link } from "react-router-dom";
-import Container from "./container";
-import dbLogo from "../assets/logos/dbLogo.png";
+import dbLogo from "../assets/interviewai-pro-logo.svg";
 import { useAuth } from "../context/AuthProvider";
 import { IoHome } from "react-icons/io5";
 import { MdOutlineBusinessCenter } from "react-icons/md";
@@ -83,7 +82,7 @@ const UserOrAdminDBLayout = () => {
 
       console.log("console log from redirect", userMeta);
 
-      if (!userData.OTPverified) {
+      if (!userData) {
         toast.error("Please get OTP verified in Settings", {
           description: "Complete OTP verification to access all features.",
           action: {
@@ -187,139 +186,7 @@ const UserOrAdminDBLayout = () => {
     fetchProfile();
   }, [user]);
 
-  // useEffect(() => {
-  //   if (!user?.approvalToken) {
-  //     setLoadingProfile(false);
-  //     return;
-  //   }
-
-  //   const fetchProfile = async (isInitialFetch = false) => {
-  //     // Only set loading state for initial fetch
-  //     if (isInitialFetch) {
-  //       setLoadingProfile(true);
-  //     }
-  //     setErrorProfile(null);
-
-  //     try {
-  //       const response = await axios.get(
-  //         `${import.meta.env.VITE_BASE_URL}/users/getProfile`,
-  //         {
-  //           headers: {
-  //             Authorization: `${user.approvalToken}`,
-  //           },
-  //         }
-  //       );
-
-  //       setProfile(response.data);
-  //       console.log(
-  //         "profileeeeeeeee :::::::::",
-  //         response.data.data.interviewsAvailable
-  //       );
-  //     } catch (error) {
-  //       setErrorProfile(
-  //         error.response?.data?.message ||
-  //           error.message ||
-  //           "Something went wrong"
-  //       );
-  //     } finally {
-  //       if (isInitialFetch) {
-  //         setLoadingProfile(false);
-  //       }
-  //     }
-  //   };
-
-  //   // Initial fetch with loading state
-  //   fetchProfile(true);
-
-  //   // Refetch when entering the Mock Interviews page or window regains focus
-  //   if (baseRoute === "mockInterview") {
-  //     fetchProfile(false); // Refetch without loading state
-  //   }
-
-  //   // Add event listener for window focus to refetch profile without loading state
-  //   const handleFocus = () => {
-  //     fetchProfile(false); // Refetch without loading state
-  //   };
-
-  //   window.addEventListener("focus", handleFocus);
-
-  //   // Cleanup event listener on component unmount
-  //   return () => {
-  //     window.removeEventListener("focus", handleFocus);
-  //   };
-  // }, [user, baseRoute]);
-
-  // useEffect(() => {
-  //   if (!userType) {
-  //     console.log("Waiting for userType to be available");
-  //     return;
-  //   }
-
-  //   // Handle one-time redirect after login
-  //   const hasRedirected = localStorage.getItem("hasRedirected");
-  //   if (!hasRedirected) {
-  //     const routes = userType === "admin" ? adminRoutes : userRoutes;
-  //     const firstRoute = routes[0].to;
-  //     console.log(`Performing one-time redirect to: /userDashboard/${firstRoute}`);
-  //     localStorage.setItem("hasRedirected", "true");
-  //     navigate(`/userDashboard/${firstRoute}`);
-  //     return;
-  //   }
-
-  //   // Show notifications for incomplete steps (non-admins only)
-  //   if (userType !== "admin" && userMeta) {
-  //     const completedSteps = userMeta;
-  //     const currentPath = location.pathname;
-
-  //     if (!userData.OTPverified) {
-  //       console.log("User is not OTP verified");
-  //       toast.error("Please get OTP verified in Settings", {
-  //         description: "Complete OTP verification to access all features.",
-  //         action: {
-  //           label: "Go to Settings",
-  //           onClick: () => handleNavigation("settings"),
-  //         },
-  //       });
-  //     } else if (
-  //       !completedSteps.isResumeUploaded &&
-  //       currentPath !== "/resume-upload"
-  //     ) {
-  //       console.log("Resume not uploaded");
-  //       toast.warning("Please upload your resume", {
-  //         description: "Upload your resume to unlock more features.",
-  //         action: {
-  //           label: "Upload Resume",
-  //           onClick: () => navigate("/resume-upload"),
-  //         },
-  //       });
-  //     } else if (
-  //       !completedSteps.isAboutMeGenerated &&
-  //       currentPath !== "/generateAboutMe"
-  //     ) {
-  //       console.log("About Me not generated");
-  //       toast.warning("Please generate your About Me section", {
-  //         description: "Complete your About Me to enhance your profile.",
-  //         action: {
-  //           label: "Generate About Me",
-  //           onClick: () => navigate("/generateAboutMe"),
-  //         },
-  //       });
-  //     } else if (
-  //       !completedSteps.isAboutMeVideoChecked &&
-  //       currentPath !== "/generateAboutMe"
-  //     ) {
-  //       console.log("About Me video not checked");
-  //       toast.warning("Please complete your About Me video", {
-  //         description: "Finish your About Me video to proceed.",
-  //         action: {
-  //           label: "Complete Video",
-  //           onClick: () => navigate("/generateAboutMe"),
-  //         },
-  //       });
-  //     }
-  //   }
-  // }, [userType, userMeta, userData, navigate, location.pathname]);
-
+ 
   if (loadingProfile)
     return (
       <div className="flex items-center justify-center h-screen w-full bg-white">
@@ -428,7 +295,7 @@ const UserOrAdminDBLayout = () => {
         <div className="bg-white p-4 shadow flex justify-between items-center">
           <button
             onClick={toggleSidebar}
-            className="lg:hidden text-[#37B874] focus:outline-none text-4xl"
+            className="lg:hidden text-[#6a329f] focus:outline-none text-4xl"
           >
             ☰
           </button>

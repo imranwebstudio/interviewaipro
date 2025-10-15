@@ -103,7 +103,7 @@ const ViewAllInterviews = () => {
   // Reusable Interview Card Component
   const InterviewCard = ({ interview }) => (
     <div className="bg-white mb-5">
-      <div className="p-4 rounded-lg shadow border-1 border-gray-100 hover:shadow-lg hover:border-1 hover:border-[#37B874] transition block md:flex lg:flex items-center justify-between">
+      <div className="p-4 rounded-lg shadow border-1 border-gray-100 hover:shadow-lg hover:border-1 hover:border-[#6a329f] transition block md:flex lg:flex items-center justify-between">
         <div className="flex flex-row items-center gap-6 mb-6 md:mb-0 lg:mb-0">
           {interview.img ? (
             <img

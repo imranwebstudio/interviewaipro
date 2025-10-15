@@ -69,7 +69,7 @@ const CreateAdmin = ({ setNewAdminOTPToken }) => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#37B874] focus:border-[#37B874] focus:ring-2 focus:ring-[#37B874] transition duration-200"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#6a329f] focus:border-[#6a329f] focus:ring-2 focus:ring-[#6a329f] transition duration-200"
             placeholder="Your name"
           />
         </div>
@@ -84,7 +84,7 @@ const CreateAdmin = ({ setNewAdminOTPToken }) => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#37B874] focus:border-[#37B874] focus:ring-2 focus:ring-[#37B874] transition duration-200"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#6a329f] focus:border-[#6a329f] focus:ring-2 focus:ring-[#6a329f] transition duration-200"
             placeholder="you@example.com"
           />
         </div>
@@ -99,7 +99,7 @@ const CreateAdmin = ({ setNewAdminOTPToken }) => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#37B874] focus:border-[#37B874] focus:ring-2 focus:ring-[#37B874] transition duration-200"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#6a329f] focus:border-[#6a329f] focus:ring-2 focus:ring-[#6a329f] transition duration-200"
             placeholder="Your phone number"
           />
         </div>
@@ -114,7 +114,7 @@ const CreateAdmin = ({ setNewAdminOTPToken }) => {
             value={formData.password}
             onChange={handleChange}
             required
-            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#37B874] focus:border-[#37B874] focus:ring-2 focus:ring-[#37B874] transition duration-200"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#6a329f] focus:border-[#6a329f] focus:ring-2 focus:ring-[#6a329f] transition duration-200"
             placeholder="Create a password"
           />
         </div>
@@ -129,7 +129,7 @@ const CreateAdmin = ({ setNewAdminOTPToken }) => {
             value={formData.confirmPassword}
             onChange={handleChange}
             required
-            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#37B874] focus:border-[#37B874] focus:ring-2 focus:ring-[#37B874] transition duration-200"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-md hover:border-[#6a329f] focus:border-[#6a329f] focus:ring-2 focus:ring-[#6a329f] transition duration-200"
             placeholder="Confirm your password"
           />
         </div>
@@ -148,7 +148,7 @@ const CreateAdmin = ({ setNewAdminOTPToken }) => {
         </div>
         <button
           type="submit"
-          className="w-full py-3 px-4 bg-[#37B874] text-white rounded-md hover:bg-[#2ea664] transition duration-200 hover:shadow-md cursor-pointer"
+          className="w-full py-3 px-4 bg-[#6a329f] text-white rounded-md hover:bg-[#2ea664] transition duration-200 hover:shadow-md cursor-pointer"
         >
           Create Admin
         </button>

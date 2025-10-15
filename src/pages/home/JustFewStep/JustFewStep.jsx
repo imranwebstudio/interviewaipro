@@ -59,7 +59,7 @@ const cardData = [
 const JustFewStep = () => {
   return (
     <div className="max-w-7xl mx-auto mt-24">
-      <h1 className="text-center text-[32px] md:text-[32px] lg:text-[70px] font-semibold leading-[67.2px] bg-gradient-to-r from-[#195234] to-[#37B874] bg-clip-text text-transparent mb-12 md:w-[450px] lg:w-[864px] mx-auto">
+      <h1 className="text-center text-[32px] md:text-[32px] lg:text-[70px] font-semibold leading-[67.2px] bg-gradient-to-r from-[#195234] to-[#6a329f] bg-clip-text text-transparent mb-12 md:w-[450px] lg:w-[864px] mx-auto">
         Start Preparing in Just a Few Steps
       </h1>
 

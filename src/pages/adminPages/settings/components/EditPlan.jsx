@@ -66,10 +66,10 @@ const EditPlanModal = ({ isOpen, onRequestClose, plan, onUpdated }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Edit Plan"
-      className="bg-white text-black p-8 max-w-2xl mx-auto my-10 rounded-xl shadow-lg border border-[#37B874] max-h-[90vh] overflow-y-auto"
+      className="bg-white text-black p-8 max-w-2xl mx-auto my-10 rounded-xl shadow-lg border border-[#6a329f] max-h-[90vh] overflow-y-auto"
       overlayClassName="fixed inset-0 bg-white/10 backdrop-blur-sm flex justify-center items-start z-50 mx-2 md:mx-0 lg:mx-0"
     >
-      <h2 className="text-2xl text-center font-semibold mb-6 text-[#37B874]">
+      <h2 className="text-2xl text-center font-semibold mb-6 text-[#6a329f]">
         Edit Plan
       </h2>
 
@@ -78,14 +78,14 @@ const EditPlanModal = ({ isOpen, onRequestClose, plan, onUpdated }) => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="border border-[#37B874] p-3 w-full rounded-md"
+          className="border border-[#6a329f] p-3 w-full rounded-md"
           placeholder="Plan Name"
         />
         <textarea
           name="description"
           value={formData.description}
           onChange={handleChange}
-          className="border border-[#37B874] p-3 w-full rounded-md"
+          className="border border-[#6a329f] p-3 w-full rounded-md"
           placeholder="Description"
         />
         <input
@@ -93,19 +93,19 @@ const EditPlanModal = ({ isOpen, onRequestClose, plan, onUpdated }) => {
           type="number"
           value={formData.priceMonthly}
           onChange={handleChange}
-          className="border border-[#37B874] p-3 w-full rounded-md"
+          className="border border-[#6a329f] p-3 w-full rounded-md"
           placeholder="Monthly Price"
         />
         <input
           name="priceLabel"
           value={formData.priceLabel}
           onChange={handleChange}
-          className="border border-[#37B874] p-3 w-full rounded-md"
+          className="border border-[#6a329f] p-3 w-full rounded-md"
           placeholder="Price Label"
         />
 
         <div>
-          <label className="font-semibold text-[#37B874] mb-2 block">
+          <label className="font-semibold text-[#6a329f] mb-2 block">
             Features
           </label>
           {formData.features.map((feature, i) => (
@@ -113,7 +113,7 @@ const EditPlanModal = ({ isOpen, onRequestClose, plan, onUpdated }) => {
               <input
                 value={feature}
                 onChange={(e) => handleFeatureChange(i, e.target.value)}
-                className="border border-[#37B874] p-2 w-full rounded-md"
+                className="border border-[#6a329f] p-2 w-full rounded-md"
                 placeholder={`Feature ${i + 1}`}
               />
               <button
@@ -128,7 +128,7 @@ const EditPlanModal = ({ isOpen, onRequestClose, plan, onUpdated }) => {
           <button
             type="button"
             onClick={addFeature}
-            className="bg-[#37B874] text-white px-3 py-1 rounded-md hover:bg-[#2e9d64] mt-3"
+            className="bg-[#6a329f] text-white px-3 py-1 rounded-md hover:bg-[#2e9d64] mt-3"
           >
             + Add Feature
           </button>
@@ -144,7 +144,7 @@ const EditPlanModal = ({ isOpen, onRequestClose, plan, onUpdated }) => {
           </button>
           <button
             type="submit"
-            className="px-5 py-2 rounded-md bg-[#37B874] text-white hover:bg-[#2e9d64]"
+            className="px-5 py-2 rounded-md bg-[#6a329f] text-white hover:bg-[#2e9d64]"
           >
             Save Changes
           </button>

@@ -7,7 +7,7 @@ const HelpCenterBanner = () => {
       <h1
         className="text-center text-[28px] md:text-[36px] lg:text-[60px] font-semibold leading-[67.2px] mb-12 mx-auto"
         style={{
-          background: "linear-gradient(90deg, #195234   0.24%, #37B874 85.86%)",
+          background: "linear-gradient(90deg, #195234   0.24%, #6a329f 85.86%)",
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",

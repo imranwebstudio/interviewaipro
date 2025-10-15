@@ -275,7 +275,7 @@ const ResumeUpload = () => {
           <div className="bg-white p-6 rounded-xl shadow-xl text-center">
             <div className="flex items-center justify-center mb-4">
               <svg
-                className="animate-spin h-6 w-6 text-[#37B874] mr-2"
+                className="animate-spin h-6 w-6 text-[#6a329f] mr-2"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -293,7 +293,7 @@ const ResumeUpload = () => {
                   d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
                 />
               </svg>
-              <p className="text-lg text-[#37B874] font-semibold">
+              <p className="text-lg text-[#6a329f] font-semibold">
                 Analyzing your resume...
               </p>
             </div>
